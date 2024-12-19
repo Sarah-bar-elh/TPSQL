@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Tp SQL</h1>
+  
+    <!-- Bouton pour télécharger un fichier -->
+    <button onclick="telechargerFichier()">Télécharger le fichier sql</button>
+
+    <!-- Bouton pour ouvrir une image dans un nouvel onglet -->
+    <button onclick="ouvrirNouvelOnglet()">Afficher les liaison</button>
+
+    <script>
+        
+        function telechargerFichier() {
+            const lien = document.createElement('a');
+            lien.href = 'GestionCommandes.sql'; // Remplacez par le chemin de votre fichier
+            lien.download = 'estionCommandes.sql'; // Nom du fichier téléchargé
+            lien.click();
+        }
+
+        // Fonction pour ouvrir une image dans un nouvel onglet
+        function ouvrirNouvelOnglet() {
+            const urlImage = 'tpSQL.png'; 
+            window.open(urlImage, '_blank');
+        }
+    </script>
+</body>
+</html>
